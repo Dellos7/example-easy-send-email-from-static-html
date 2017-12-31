@@ -3,15 +3,32 @@
 <head>
 	<title>Contact form</title>
 	 <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<style type="text/css">
-		.form-style{
+
+
+		.form-style {
 		    font: 95% Arial, Helvetica, sans-serif;
-		    max-width: 400px;
 		    margin: 10px auto;
 		    padding: 16px;
 		    background: #F7F7F7;
+		    max-width: 60%;
 		}
+
+		@media only screen and (max-width: 768px) {
+			.form-style{
+			    max-width: 100%;
+			}		
+		}
+
+		@media only screen and (min-width: 768px) and (max-width: 1024px) {
+			.form-style{
+			    max-width: 80%;
+			}		
+		}
+
+		
 		.form-style h1{
 		    /*background: #43D1AF;*/
 		    background: #ff9900;
@@ -82,6 +99,7 @@
 		    border-right-style: none;
 		    border-left-style: none;    
 		    color: #fff;
+		    font-size: 1.2em;
 		}
 		.form-style input[type="submit"]:hover,
 		.form-style input[type="button"]:hover{
